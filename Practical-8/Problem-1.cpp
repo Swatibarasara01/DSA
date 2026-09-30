@@ -2,7 +2,6 @@
 #include <queue>
 using namespace std;
 
-// Node of Binary Tree
 struct Node {
     int data;
     Node* left;
@@ -72,8 +71,7 @@ void levelOrder(Node* root) {
 }
 
 int main() {
-
-    // Creating Binary Tree
+    
     Node* root = new Node(1);
 
     root->left = new Node(2);
@@ -85,7 +83,6 @@ int main() {
     root->right->left = new Node(6);
     root->right->right = new Node(7);
 
-    // Display all traversals
     cout << "Inorder Traversal: ";
     inorder(root);
 
